@@ -10,8 +10,8 @@ public class Grievance {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    
-    // Auto-generated skeleton fields
-    private String name;
-    private String status;
+
+    private int totalFiled;
+    private int resolvedPercent;
+    private int mttrHours;
 }

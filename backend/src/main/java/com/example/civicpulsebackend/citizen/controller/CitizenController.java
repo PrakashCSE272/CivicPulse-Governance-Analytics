@@ -23,4 +23,8 @@ public class CitizenController {
     public Citizen create(@RequestBody Citizen entity) {
         return repository.save(entity);
     }
+        @DeleteMapping("/{id}")
+    public void delete(@PathVariable java.util.UUID id) {
+        repository.deleteById(id);
+    }
 }

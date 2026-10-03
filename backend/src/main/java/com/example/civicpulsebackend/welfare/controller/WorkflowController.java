@@ -23,4 +23,8 @@ public class WorkflowController {
     public Workflow create(@RequestBody Workflow entity) {
         return repository.save(entity);
     }
+        @DeleteMapping("/{id}")
+    public void delete(@PathVariable java.util.UUID id) {
+        repository.deleteById(id);
+    }
 }

@@ -10,8 +10,8 @@ public class Workflow {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    
-    // Auto-generated skeleton fields
-    private String name;
-    private String status;
+
+    private int totalRequests;
+    private int resolvedPercent;
+    private double avgResolutionDays;
 }

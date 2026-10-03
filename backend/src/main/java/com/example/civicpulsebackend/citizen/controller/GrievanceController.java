@@ -23,4 +23,8 @@ public class GrievanceController {
     public Grievance create(@RequestBody Grievance entity) {
         return repository.save(entity);
     }
+        @DeleteMapping("/{id}")
+    public void delete(@PathVariable java.util.UUID id) {
+        repository.deleteById(id);
+    }
 }

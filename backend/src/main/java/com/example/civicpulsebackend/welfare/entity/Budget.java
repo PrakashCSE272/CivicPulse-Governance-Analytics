@@ -10,8 +10,8 @@ public class Budget {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    
-    // Auto-generated skeleton fields
-    private String name;
-    private String status;
+
+    private double allocated;
+    private double utilized;
+    private int utilizedPercent;
 }

@@ -10,8 +10,7 @@ public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    
-    // Auto-generated skeleton fields
+
     private String name;
-    private String status;
+    private int performancePercent;
 }
