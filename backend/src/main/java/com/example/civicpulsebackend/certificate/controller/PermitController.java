@@ -23,4 +23,8 @@ public class PermitController {
     public Permit create(@RequestBody Permit entity) {
         return repository.save(entity);
     }
+    @DeleteMapping("/{id}")
+public void delete(@PathVariable java.util.UUID id) {
+    repository.deleteById(id);
+}
 }

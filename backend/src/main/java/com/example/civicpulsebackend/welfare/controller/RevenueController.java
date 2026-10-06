@@ -22,4 +22,8 @@ public class RevenueController {
     public Revenue create(@RequestBody Revenue entity) {
         return repository.save(entity);
     }
+    @DeleteMapping("/{id}")
+public void delete(@PathVariable java.util.UUID id) {
+    repository.deleteById(id);
+}
 }
